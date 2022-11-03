@@ -1,0 +1,781 @@
+c++ is a general purpose high level object oriented programming language developed at AT&T Bell laboratories
+Murray hills, New Jersey USA in the year 1980 bya dannish computer scientist name Bjarne Stourstroup
+
+This  language is a super set to c language i.e any program written in C language can be run in C++ with some exception.
+#include<iostream<
+using namespace std;
+*Token:- The smallest individual element of a programming language is known as a token.
+->Any programming language  has its separate set of tokens. Ant program can be wrriten using               
+    token,white spaces & special symbols.
+-> Token provided a C++ language keywords,indentifiers,constants&special symbols.
+1. Keywords:- Thesee are the set of reserve words that has a special meaning to it. The C++    language supports all the 32 keywords from C language and a few more.
+2.Identifiers:-Identifiers are any unique name given to a variable or a class of other data structures.
+->Identifers help us to any name location or procedure throughout the program repeatedly.
+
+Rules for naming a identifiers:--
+1.it should not be a keyword.
+2.It must have only alphabets or digit or underscores but should not start with a number.
+3.The  minimum length should be atleast 1 character.
+4.It should not contain space.
+
+3.Constant:--constant is a fixed value stored in the memory and access with the help of a keyword throughout the program.
+4.Literal:-A literal is a unnamed constants which is not stored in the memory.
+
+Structure of a C++ program:-
+1.Documentation/comment
+2.include files
+3.Class declaration
+4.Member function declaration
+5.Main method
+
+fibbonacci number upto a given number.
+
+Data type -- It reserves space in the memory for a data to be stored.
+                                                                    Data type         
+  User defined                                              Built in                                                       derived
+  class                                               numeric     char    void     
+  structure                            real                   whole       
+  union                          float     double       byte 
+   enum                                                          short
+                                                                        int 
+                                                                         long
+
+Variables in C++ :-
+It is a named location to a memory address which can be called multiple times in a program and various read and right operations can be made to it.
+
+Syntax for declaring a variable:---
+<data type> <variable name>;
+eg:-- int a;
+
+Syntax for intiallizing a variable:---
+int a;                or           int a = 5;
+a=5;
+
+C++prog:--
+//My first program                                                   
+#include <iostream.h>                                                                           
+int main()
+{
+        cout<<"welcome to GCA\n";
+         return  0;                                                                       
+}
+int a,b,c;
+a=0,b=1;
+while(c<=w)
+{
+             c=a+b;
+             printf("%d");
+             a=b;
+             b=c;
+}
+Turbo c++ :--
+It is an integrated development environment (IDE)
+to develop C and C++ program.
+
+->tap to start open turbo C++
+->Restart turbo C++
+->Open turbo C++ again,goto the file menu click on open.
+->Goto file location->select file->click open
+
+Short cut key:-
+1-open a file-F3
+2-close a file-Alt+F3
+3-Save a file-F2
+4-Full Screen/half screen mode-F5
+5-compile-Alt+F9
+6-Run a file-ctrl+F9
+7-manue-F10
+8-Help-F1
+9-Close turbo C++-Alt+x
+10-Output Screen-Alt+F5
+
+Operators in C++:-
+An operator is a symbol in c++ which perform specific perform over the operands provided.
+Operands->An operand is a varisable or a constant or literal.
+Tyles of operators:-
+There are six types of operators in C++
+(1)Arithmetic operators->+,-,*,/,++,--
+(2)Relational operator-> >,<,>=,<=,=,,!
+(3)Logical operator->(&,&,||,!)
+(4)Bitwise operator->(=,+=,!=,*=)
+(5)Assignment operator->(= | + = ! - = *)
+(6)Special operator||miscellaneous operator
+:: -> Scope resolution operator
+() -> Type cast operator
+endl -> endline operator
+?: -> ternary operator
+
+Scope resolution operator -> (::)
+This operator gkos us to access global variable for a program having a local variable with the same name.
+**Write a program to enter an age and print if this is major or minor
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+ clrscr();
+int zge;
+cout<<<"enter your age:";
+cin>>age;
+result=<age>=18!"majorr":"minor";
+cout<<"you are a "<<result<<endl;
+getch();
+return 0;
+}
+
+*Write a program to enter two numbers and print difference between them:-
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+clrscr();
+int a,b;
+cout<<"enter two numbers";
+cin>>a>>b;
+int difference=a>b?a-b:b-a;
+cout<<<"The differnce between two number is"<<difference<<endl;
+retrnn 0;
+}
+
+
+*Write a program to enter two number and find the smallest number:-
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+clrscr();
+int a,b;
+cout<<"Enter two numbers:";
+cin>>a<<b;
+int smallest=a<b?a:b;a<b?a:b;
+cout<<"the smallest number is:"<<smallest<<endl;
+getch();
+return 0;
+}
+
+*Write a program in C++ to enter three number and dinf the smallest number:-
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+clrscr();
+int a,b,c;
+cout<<"enter three number";
+cin>>a>>b>>c;
+int smallest=a>b?a<c;b<c;
+a:b:c;
+cout<<"the smallest number is :"<<smallest<<endl;
+getch();
+return 0;
+}
+
+Control structure in C++
+Control structure decides the flow of execution of this statement in a program.
+There are three control structure in C++ language they are:-
+(i)Sequential control structure
+(ii)Branched  control structure
+(iii)iterative control structure
+
+1 Sequential control structure:-
+In sequential control structure the statements execute sequentially that is they ececute one after the other.
+2. Branched control structure:-
+In branched control structure group of statements are eighther executes or skiiped depending upon the truthfullness of the condition provided.
+In simple words some statements gets executed and other do not depending upon a situation given by the program.
+->there ar efive differnet control structure inC++ they are:-
+1. If statement
+2.Nested if statement 
+3.If else statement 
+4.If else if ladder statement
+5.Switch statement
+
+*Write a program in C++ to enter in age and check if is a valid age to vote.
+#include<iostream.h>
+#include<conio.>
+int main()
+{
+clrscr();
+int a,b;
+cout<<"enter two number";
+cin>>a>>b;
+if(a>b)
+{
+int difference = a-b;
+cout<<" The difference is "<<difference;
+}
+else
+{
+int difference=b-a;
+cout<<"tjhe difference is "<<difference;
+}getch();
+return 0;
+}
+
+1. IF statement:-
+The if statement execute the block of code that is written within it (inside it).If the given condititon is true else the statements are skipped.
+Syntax = if(condition)
+{
+------
+-----         (IF statements)
+------
+}
+
+*Write a proggram in C++ to enter a number and print hello if the number is 10 and end the program with a bye message:-
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+clrscr();
+int n;
+cout<<"enter a number;
+cin>>Nl
+if(n==10)
+{
+cout<<"HELLO"<<endl;
+}
+cout<<"Bye";
+getch();
+return 0;
+}
+
+*WAP in C++ to enter a number and check if the number is divisible by 5
+#include<Iostream.h>
+#include<conio.h>
+int main()
+{
+int n;
+cout<<"enter a number:-";
+cin>>n;
+if(n%5==0)
+{
+cout<<"divisible by 5";
+}
+else
+{
+cout<<"Not divisible  by 5";
+}
+getch();
+return 0;
+}
+
+*Write a program toe enter a number and check if it is a even number:-
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+clrscr();
+int a;
+cout<<"enrter a number";
+cin>>a;
+if(a%2==0)
+{
+cout<<"even";
+}
+else
+{
+cout<<"odd";
+}
+getch();
+return 0;
+}
+
+*
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+int a;
+clrscr();
+cout<<"enter a number";
+cin>>a;
+char* result=a%2==0?"even":"odd";
+cout<<"result";
+return 0;
+}
+
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+int year;
+clrscr();
+cout<"Enter a year";
+cin>>year;
+char* result=((year%4==0&&year%100!=0)||(year%450==0)):"leap year":"not a leap year";
+cout<<"result";
+getch();
+return 0;
+}
+
+IF-ElSE STATEMENT:-
+An if-else statement is IF statement followe by an else block. The of statement test the condition ad the if block is executed only of the condition is true other wise the statement in the else block gets executed.
+Syntax:-
+if(conditon)
+{
+(if statement)
+}
+else
+{
+(else statement)
+}
+
+NESTED_IF STATEMENT
+Nested if statement is an IF statement within another if statement.The nested if statement is used to address problems where chain of condition follow each other.
+SYNTAX:-
+if(condition)
+{
+if(condtion 2)
+{
+if(condition 3)
+{
+-----
+------
+}
+____
+}
+}
+
+IF-ELSE LADDER STATEMENT:-
+IF-else if laffer statemetn is a chain of if else statement. In this statement the else block consists of another if else statement.
+->This statement is used when we have multiple condition but only one has to be selected.
+SYNTAX 
+IF(condition-1)
+{
+----------
+----------
+}
+else if(conditon-2)
+{
+---------
+---------
+}
+else 
+{
+}
+
+*WAP in C++ to take input the annual income of a person and calculate the tax that he has to pay over this income according to the followint table.
+INCOME                         TAX                
+0-5 lakh                          0%       
+50000-1 lakhs                5%        
+100000-10 lakhs            10%             
+above 10 lakhs               20%
+
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+clrscr();
+float i,t=0;
+cout<<"enter annual income:";
+cin>>i;
+if(i>10lakhs)
+{
+t=0?*i;
+}
+else if(i>=700000)
+{
+t=0.1*i;
+}
+else if(i>500000)
+{
+t=0.05*i;
+}
+else
+{
+t=0.2*i;
+}
+cout<<"Tax="<<t<<endl;
+getch();
+return 0;
+}
+
+*WAP in C++ to enter a percentage and assign grade as follows:-
+PERCENTAGE                        GRADE
+80-100                                  A
+70-80                                    B
+60-70                                    C 
+50-60                                    D          
+40-50                                    E            
+below 40                              F                            
+
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+clrscr();
+char i;
+float percentage = 0;
+cout<<"Enter a percentage";
+cin>>Percentage;
+if(i>80)
+{
+percentage = 'A';
+}
+elseif(i>70)
+{
+percentage='B';
+}
+else if(i>60)
+{
+percentage='C'
+}
+else if(i>50)
+{
+percentage = 'D';
+}
+else if(i>40)
+{
+percentage = 'E';
+}
+else
+{
+percentage= 'F';
+}
+cout<<""mark="<<percentage;
+getch();
+return 0;
+}
+
+SWITCH-CASE STATEMENT:-
+The switch case statement is used to select single statement out of the multiple statement based on the input.
+The switch case statement consists of a switch block along woth different case labels within it that are matched to the choice provided in the switch statement and the corresponding statement to the lable that matcches the coice is executed to prevent fall throuth that is execution of rest of day statements below the match case label of a break statement is return after at the statement in case no choice matches the labels the different statements is executed.
+SYNTAX:-
+switch(condition)
+{
+case label 1:statement 1;break;
+case label 2:statement 2;break;
+.
+.
+case label n:statement n;break;
+default:statement;
+}
+
+*WAP to enter a number between 1 and 7 and print the corresponding week of the ayy considering 1 to be sunday.
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+int n;
+char* day[10];
+clrscr();
+cout<<"Enter a number between 1 and 7";
+cin>>n;
+switch(n)
+{
+case 1:
+day="sunday";
+break;
+casse 2:
+day="moday";
+break;
+case 3:
+day="tuesday"
+break;
+case 4:
+day="wednesday";
+break;
+case 5:
+day="thursday";
+break;
+case 6:
+day="friday";
+break;
+case 7:
+day="saturday";
+break;
+default:
+cout<<"sorry no choice";
+cout<<day;
+getch();
+return 0;
+}
+
+Iterative control structure:
+
+An iterative statement execute a block of statements repeatedly.
+->Iterative statement is also known as looping statement.
+->the loop continue to execute a block of statement until the given condition to tun the loop as false.
+->on the basis of the position where the condition is checked loop are of two type 
+1->Entery control loop
+2->exit control loop
+
+Entry control loop is of two types:--
+1.While loop
+2.for loop
+
+There is only one exit control loop that is do while loop.
+
+WHILE LOOP:-
+This loop accepts a conditon expressions and a body.
+->the statement inside the body execute repeatedly until the condition expression is false.
+->The while loop is mutes when the number of execution of the loop is not fake of predefined.
+SYNTAX:-
+while(expression)
+{
+statements;
+}
+
+*WAP to enter a number and calculate the number the nuber of digits in it.
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+int n;
+char* day;
+clrscr();
+cout<<"enrer a date between 1 to 31";
+cin>>N;
+switch(n%7)
+{
+case 0:
+day="saturday";
+break;
+case 1:
+day="sunday";
+break;
+case 2:
+day="monday";
+break;
+case 3:
+day="tuesday";
+break;
+case 4:
+day="wednesday";
+case 5:
+day="thursday";
+break;
+case 6:
+day="friday";
+break;
+default:
+day="not invalid";
+cout<<day;
+geych();
+return 0;
+}
+
+FOR LOOP:-
+The for loop iterate oever a blocl of staements until the given conditon is false the for loop is usually used to iterate over ranges and collection where the number of repetition is entity.
+
+The for loop accept three expression within the parenthesis () they are an initialllization expression a test expression and an increasement order increament separated by semicolon(;).
+SYNTAX:-
+For (initiallizationexpression;text.ex;incremeent\decrement expression)
+{
+statements
+}
+
+The for loop execute the statement until the text condition is false.
+
+*WAP to enter a number and print all the factors of that numbers.
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+int n;
+clrscr();
+cout<<"enter a number";
+cin>>n;
+{
+cout<<"the factors of"<<n<<"are:"<<endl;
+for(int i=1;i<=n;i++)
+{
+if(n%i==0)
+cout<<i<<" " ;
+}
+getch();
+return 0;
+}
+
+Nested Loop:-
+A loop body consisting another looping statement as known as nested loop.
+EX-WAP to enter a number and check if it is prime number or not:-
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+int n,flay=0;
+clrscr();
+cout<<"enter a number:";
+cin>>n;
+for(int i=2;i<n;i++)
+{
+if((n%i==0)
+{
+flay++;
+break;
+}
+if(flay)
+{
+cout<<"Not a prime number";
+}
+else if(n==1)
+{
+cout<<"PRIME NUMBER";
+}
+getch();
+return 0;
+}
+
+ARRAY:-
+An arrat is a homogenous collection of multiple data item in contigous memory location. Also an array elements can be accused by "0" base indexing.
+->The array size should be declared at the time of array declaration and the size should be a costant.
+->once an array is declared with a size cannot be farther change through out the program.
+SYNTAX =  
+declaration 
+int roll[5];
+<datatype> : <nameofarray>
+[<size>];
+Example = Declare an array to store 
+sroll no
+int roll[5];
+
+initialization
+SYNTAX:-
+<datatype> <arrayname> [] = {value1.value2....valuen)
+<datatype> <arrayname> [size] <arrayname> [index] = value;
+ex= initialization sroll no to an array
+*WAP to enter the age of 5 students and print them.
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+int age[]={20,21,20,23,18};
+clrscr{};
+cout<<"simarani's age:"<<age[0]<<endl;
+cout<"Sangitas age:"<<age[1]<<endl;
+cout<<"Anilata age:"<<age[2]<<endl;
+cout<<"mina age:"<<age[3]<<endl;
+cout<<"Hritik age:"<<age[4]<endl;
+getch();
+return 0;
+}
+
+*WAP to enter the mark of 10 student and print them 
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+float mark[10];
+clrscr();
+cout<<"enter the mark of 10 students"<<endl;
+for(int i=0;i<=a;i**)
+{
+cout<<"Enter mark of student << i*i<<"::";
+cin>>mark[i];
+}
+cout<<"n\n the mark of the student are "f <<endl;
+for(int i=0;i<=a;i**)
+{
+cout<<"mark of student "<<j*1<<"::"<<mark[j]<<endl;
+}
+getch();
+return 0;
+}
+
+*WAP to input two numbers in array and print them in ascending order
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+int num[10];
+int a;
+clrscr();
+cout<<"enter 10 numbers by one"<<endl;
+for(a=0;a<=9;a++)
+{
+cin>>unm[a];
+}
+//bubble sort
+int big = a[0];
+for(int i = 0; i<=9;i++)
+{
+for(int j=0;j<=9;j++)
+{
+if(num[i]<num[j])
+{
+int x=num[i];
+num[i]=num[j];
+num[j]=x;
+}
+getch();
+return 0;
+}
+
+Introduction to object oriented programming(OOP):-
+object oriented programming is a designing technique that enables the programmer to replicate real world objects of things into programming concept.
+Priciples of object oriented programming:-
+There are six principle of oop they are:-----
+1.class
+2.object
+3.encapsulation 
+4.abstraction
+5.inheritance
+6.polymorphism
+
+1.CLASS:-
+A class is an user defined data type that is used to represent complex data structure.
+->A class not only represet a data structure but also defined the legal operation that can be performed over the data.
+EXAMPLE:-
+class student
+{
+char name[30];
+int age;
+char phone[14];
+char roll[1];
+void fesspaid();
+void taken exam();
+void ispresent();
+};
+
+2.OBJECT:-
+an object is a variable of type class.
+=> an object in software term is a real world entity which has its physical exicant and is able to perform operation over the value of a class.
+3.METHOD:-
+A method is a block of code that perform a specific task.
+as specific task.
+=>A method is writtten to a chinese reusability of programming logic that is with write of programming logic that is with write a logic inside of methid and called it when ever with required in stated of rewriting the logic.
+=>A method has a written type and a name followed by a pair of parenthesis which may not recieve ant argument and much return of value or an objet and if it does not return any value than the return type should be void.
+=>A method is similar to a function and can e interchanged able used but by convention a function inside a class a called method.
+=>a function or a method is used to specify some logoc inside it.
+int add two number(int a,int b)
+{
+int c=a+b;
+return c;
+}
+CONSTRUCTOR:-
+A constructor is a special method which has no written type not even void and has the same name has that of the class.
+=>A constructor is used to create and object from a class and is also used to provided intital value to the data members of the class.
+SYNTAX:-
+class student 
+{
+student ()
+{
+----
+-----
+}
+}
+
+There are two type of costructor 
+1-paramiterized
+2-non parameterized
+
+1-Parameterised:-
+A parameterizd constructor accept parameter that can be used to initialize and object.
+->A parameterised constructor is defined manually by the developer.
+2-Non-parameterised:-
+A non-parameterised constructor is also known as a default constructor because it is defined by the compiler
+->Default constructor or nonparameterized constructor is also used to initiallise and object but it does at accept any argument.
+->if the developer manually defined or default the contains are over usated.
+
+
+INHERITANCE:-
+Inheritance it is the process in which is child class gets the properties of a parent class.
+->it helps us in code reusability there are four type of inheritance.
+ENCAPSULATION:-
+The process of binding data and method operating over them in a single unit it is sage from out access is called encapsulation.
+ABSTRAACTION:-
+The process of hiding on accessory details and scouting only the  necessart details is called abstraction.
+POLYMORPHISM:-
+An object when behave differently in different situations is it called polymorphism 
+->Polymorphism is a grate term made up of two terms poly meaning multiple and morph meaning forms.
+OVERLOADING:-
+Defining a multiple method with same name but different function signature is known as overloading or more precisely function overloading.
+
